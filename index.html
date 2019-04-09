@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&lt;/salt&gt; :: ToDo</title>
+  <link rel="stylesheet" type="text/css" href="style/todo.css">
+  <script src="js/todo.js"></script>
+</head>
+<body>
+  <div class="container">
+      <div class="addtodo">
+        <h4>Register New ToDo</h4>
+        <form class="todo-form">
+          <label for="title">Title:</label>
+          <input id="title" type="text" name="title" required>
+          <label for="description">Description:</label>
+          <input id="description" type="text" name="description" required>
+          <button class="formbutton" id="submitbutton" type="submit">Add</button>
+          <button class="formbutton" id="sortbutton">Sort newest first</button>
+        </form>
+      </div>
+    <div id="todos" class="todo-list"></div>
+    <div class="footer">
+      <button id="clearlistbutton" style="display: block;">Clear list</button>
+    </div>
+  </div>
+</body>
+</html>
